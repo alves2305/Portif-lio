@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Honk&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:wght@500;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:opsz,wght@8..60,900&display=swap');
+
+.section2 {
+    background-image: url(/assets/Group\ 3.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paragrafo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: aliceblue;
+    width: 1000px;
+    text-align: left;
+}
+
+.paragrafo-diferencial {
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.titulo__section2 {
+    display: flex;
+    justify-content: center;
+    line-height: 1.1;
+    margin-top: 100px;
+}
+
+.titulo {
+    font-family: "Audiowide", sans-serif;
+    font-style: normal;
+    font-size: 80px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.titulo-diferencial__section2{
+    margin-top: 90px;
+    margin-bottom: 100px;
+}
+

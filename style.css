@@ -1,0 +1,8 @@
+@import url(styles/header.css);
+@import url(styles/section1.css);
+@import url(styles/section2.css);
+@import url(styles/section3.css);
+
+body{
+    background-color: #000000;
+}

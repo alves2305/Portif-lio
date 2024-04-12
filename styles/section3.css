@@ -1,0 +1,13 @@
+.section3{
+    background-image: url(/assets/img-projetos.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.titulo-diferencial__section3 {
+    
+    margin-top: 190px;
+}
+
