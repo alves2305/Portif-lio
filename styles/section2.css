@@ -44,3 +44,33 @@
     margin-bottom: 100px;
 }
 
+
+@media(max-width:480px) {
+    .section2 {
+        width: 430px;
+    }
+    .titulo-diferencial__section2 {
+        font-size: 30px;
+    }
+    .paragrafo {
+        font-size: 30px;
+        text-align: center;
+        width: 400px;
+    }
+    .section2 {
+        background-image: none ;
+    }
+}
+
+
+
+@media(max-width:1300px) {
+    .paragrafo {
+        font-size: 30px;
+    }
+    .titulo-diferencial__section2 {
+        font-size: 50px;
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+}

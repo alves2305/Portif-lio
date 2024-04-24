@@ -11,3 +11,22 @@
     margin-top: 190px;
 }
 
+
+@media(max-width:480px) {
+    .section3{
+        background-image: none;
+    }
+}
+
+
+@media(max-width:1300px) {
+    .paragrafo {
+        font-size: 30px;
+    }
+    .titulo-diferencial__section3 {
+        font-size: 50px;
+        margin-top: 130px;
+        margin-bottom: 100px;
+    }
+}
+
