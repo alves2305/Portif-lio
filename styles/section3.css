@@ -1,5 +1,6 @@
 .section3{
-    background-image: url(/assets/img-projetos.svg);
+    background-image: url(/assets/img-projetos.svg); 
+    /* background-color: black; */
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -8,8 +9,114 @@
 }
 .titulo-diferencial__section3 {
     
-    margin-top: 190px;
+    margin-bottom: 450px;
 }
+
+.projetos__contain__section3 {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    
+}
+
+
+
+.botoes-section3 {
+    width: 220px;
+    height: 65px;
+    padding: 10px;
+    border: solid #FFFF 2px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:30px;
+    background: none;
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: 8px 8px 16px  rgba(255, 255, 255, 0.10);
+}
+.botoes-section3:hover {
+    background: #cfcfcf;
+    color: black;
+}
+
+
+.imagens-section3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 100px;
+    
+   
+    
+}
+
+.projeto-1 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../assets/projeto-1.png);
+    box-shadow: 0px 0px 16px  rgb(83, 143, 217);
+    border-radius: 30px;
+    width: 200px;
+    height: 400px;
+    background-color: black;
+      
+}
+.projeto-2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../assets/projeto-2.png);
+    box-shadow: 0px 0px 16px  rgb(83, 143, 217);
+    border-radius: 30px;
+    width: 200px;
+    height: 400px;
+    background-color: black;
+      
+}
+
+.projeto-3 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../assets/projeto-3.png);
+    box-shadow: 0px 0px 16px  rgb(83, 143, 217);
+    border-radius: 30px;
+    width: 200px;
+    height: 400px;
+    background-color: black;
+    
+      
+}
+
+.projeto-2 {
+    
+}
+
+.projeto-3 {
+    
+    
+}
+
+.projeto-1:hover {
+    scale: 1.1;
+}
+.projeto-2:hover {
+    scale: 1.1;
+}
+.projeto-3:hover {
+    scale: 1.1;
+}
+
+
+
+
+
+
+
+
+
 
 
 @media(max-width:480px) {
