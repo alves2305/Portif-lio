@@ -17,6 +17,8 @@
     color: aliceblue;
     width: 1000px;
     text-align: justify;
+    hyphens: auto;
+    line-height: 50px;
 }
 
 .paragrafo-diferencial {
@@ -73,5 +75,8 @@
         font-size: 50px;
         margin-top: 30px;
         margin-bottom: 100px;
+    }
+    .section2 {
+        height: 130vh;
     }
 }
