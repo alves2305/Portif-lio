@@ -224,7 +224,7 @@ html {
 }
 
 
-@media(max-width:1300px) {
+@media(max-width:1400px) {
     .img__section1 img {
         width: 400px;
     }

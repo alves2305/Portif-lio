@@ -3,7 +3,7 @@
     /* background-color: black; */
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
 }
@@ -91,14 +91,9 @@
       
 }
 
-.projeto-2 {
-    
-}
 
-.projeto-3 {
-    
-    
-}
+
+
 
 .projeto-1:hover {
     scale: 1.1;
@@ -127,9 +122,12 @@
 }
 
 
-@media(max-width:1300px) {
+@media(max-width:1400px) {
     .paragrafo {
         font-size: 30px;
+    }
+    .section3 {
+        height: 130vh;
     }
     .titulo-diferencial__section3 {
         font-size: 50px;

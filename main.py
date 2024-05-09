@@ -1,32 +1,43 @@
-from flask import Flask, render_template, request
+import os
 import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from flask import Flask, request
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET', 'POST'])
-def home():
-    if request.method == 'POST':
-        email = request.form['email']
-        mensagem = request.form['mensagem']
-        enviar_email(email, mensagem)
-        return 'Mensagem enviada com sucesso!'
-    return render_template('index.html')
+@app.route('/enviar_email', methods=['POST'])
+def enviar_email():
+    # Informações do formulário HTML
+    remetente = request.form['remetente']
+    destinatario = request.form['email']
+    mensagem = request.form['mensagem']
 
-def enviar_email(email, mensagem):
-    remetente = 'raffa.alves.souza@gmail.com'
-    destinatario = 'raffa.alves.souza@gmail.com'
-    assunto = 'Nova mensagem do site'
-    corpo_email = f'E-mail: {email}\nMensagem: {mensagem}'
+    # Configuração do servidor SMTP
+    servidor_smtp = "smtp.gmail.com"
+    porta = 587
+    usuario = "raffa.alves.souza@gmail.com"  # Substitua pelo seu e-mail
+    senha = "Dark2305#"  # Substitua pela sua senha
 
+    # Criando a mensagem de e-mail
+    msg = MIMEMultipart()
+    msg['From'] = remetente
+    msg['To'] = destinatario
+    msg['Subject'] = "Assunto do E-mail"
+    corpo = mensagem
+    msg.attach(MIMEText(corpo, 'plain'))
+
+    # Enviando o e-mail
     try:
-        server = smtplib.SMTP('smtp.gmail.com', 587)
+        server = smtplib.SMTP(servidor_smtp, porta)
         server.starttls()
-        server.login(remetente, 'Dark2305#')
-        server.sendmail(remetente, destinatario, corpo_email)
+        server.login(usuario, senha)
+        texto_email = msg.as_string()
+        server.sendmail(remetente, destinatario, texto_email)
         server.quit()
-        print('E-mail enviado com sucesso!')
+        return 'E-mail enviado com sucesso!'
     except Exception as e:
-        print(f'Erro ao enviar e-mail: {e}')
+        return f"Erro ao enviar e-mail: {str(e)}"
 
 if __name__ == '__main__':
     app.run(debug=True)
