@@ -95,10 +95,25 @@
                             </button>
                         </a>
 
-                        <a class="ancora" href="#">
-                            <button class="button diferencial__section1">
+                        <a  class="ancora" href="#">
+                            <button onclick="cardForm()" class="button diferencial__section1">
                                 Entre em contato
                             </button>
+
+                            <div class="form-container">
+                                <form class="form" action="/enviar_email" method="POST">
+                                    <div class="form-group">
+                                        <label for="email">Company Email</label>
+                                        <input type="text" id="email" name="email" required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="mensagem">How Can We Help You?</label>
+                                        <textarea name="mensagem" id="mensagem" rows="10" cols="50" required=""></textarea>
+                                    </div>
+                                    <button class="form-submit-btn" type="submit">Submit</button>
+                                </form>
+                            </div>
+                            
                         </a>
 
 

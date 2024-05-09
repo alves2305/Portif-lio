@@ -36,5 +36,26 @@ function abrirArquivos() {
 }
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    let card2 = document.querySelector(".form-container");
+    card2.style.display = "none";
+});
+
+
+let cardFormVisible = false;
+function cardForm(){
+    let clique = document.querySelector(".form-container");
+
+    if (cardFormVisible) {
+        clique.style.display = "none"
+        cardFormVisible = false; 
+    } else {
+        clique.style.display = "flex"
+        cardFormVisible = true;
+    }
+
+}
+
+
 
 
